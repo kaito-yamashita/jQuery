@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+    <span id="text" style="color: blue;">山下海人</span><br>
+    <button type="button" id="change_btn">名前の色を変える<br>
+    <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        
+     $(function(){
+        $("#change_btn").on("click", function(){
+            let targetText = document.getElementById('text'); // 対象要素をIDで指定
+	        if (targetText.style.color == 'blue') {
+		        targetText.style.color = 'red';
+	        } else {
+		        targetText.style.color = 'blue';
+	        }
+        });
+    });
+    </script>
+</script>
+</body>
+</html>
